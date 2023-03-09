@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[V2.0][Thực hành] 1. Khai báo và sử dụng biến
+    </title>
+    <script src="main.js"></script>
+</head>
+<body>
+<!--BÀI 1-->
+<button type="button" onclick="printValue();">Print Value</button>
+<br><br><br>
+<!--BÀI 2-->
+<label>Diện tích hình chữ nhật</label>
+<button type="button" onclick="printArea();">Print Area</button>
+<br><br><br>
+<!--BÀI3-->
+<button type="button" onclick="checkBoiSo();">Kiểm tra bội số</button>
+<script>
+
+    function printValue() {
+        let i = 10;
+        let f = 20.5;
+        let b = true;
+        let s = 'Hà Nội';
+
+        document.write('i = ' + i);
+        document.write('</br>');
+        document.write('f = ' + f);
+        document.write('</br>');
+        document.write('b = ' + b);
+        document.write('</br>');
+        document.write('s = ' + b);
+        document.write('</br>');
+    }
+
+    function printArea() {
+        let withd = prompt('nhập chiều rộng của hình chữ nhật');
+        let heith = prompt('Nhật chiều cao của hình chữ nhật');
+        let area = withd * heith;
+        document.write('Diện tích hình chữ nhật là: ' + area);
+    }
+
+    function checkBoiSo() {
+        let A = prompt('Nhập giá trị của A')
+        let B = prompt('Nhập giá trị của B ')
+        if (A % B == 0) {
+            alert('A là bội số cửa B ')
+        } else {
+            alert('A không phải là bội số của B')
+        }
+    }
+</script>
+</body>
+</html>
